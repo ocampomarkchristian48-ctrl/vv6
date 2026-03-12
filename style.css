@@ -11,6 +11,8 @@ background:#87CEEB;
 font-size:80px;
 color:#1e88e5;
 margin-top:40px;
+position:relative;
+z-index:5;
 }
 
 /* CARD */
@@ -23,6 +25,8 @@ width:300px;
 margin:auto;
 color:white;
 margin-top:120px;
+position:relative;
+z-index:5;
 }
 
 /* INPUT */
@@ -44,12 +48,20 @@ border-radius:8px;
 background:#2196f3;
 color:white;
 cursor:pointer;
+position:relative;
+z-index:5;
+}
+
+button:hover{
+transform:scale(1.05);
 }
 
 /* DESCRIPTION */
 
 .descPage{
 margin-top:120px;
+position:relative;
+z-index:5;
 }
 
 .descTitle{
@@ -75,6 +87,8 @@ width:420px;
 margin:auto;
 margin-top:120px;
 box-shadow:0 10px 20px rgba(0,0,0,0.2);
+position:relative;
+z-index:5;
 }
 
 /* ANSWERS */
@@ -154,7 +168,10 @@ height:100%;
 background:linear-gradient(#6ec6ff,#dff5ff);
 overflow:hidden;
 z-index:-1;
+pointer-events:none;
 }
+
+/* SUN */
 
 .sun{
 position:absolute;
@@ -167,6 +184,8 @@ background:radial-gradient(circle,#fff700,#ffb300);
 box-shadow:0 0 80px rgba(255,200,0,0.7);
 }
 
+/* CLOUDS */
+
 .cloud{
 position:absolute;
 left:-300px;
@@ -175,6 +194,7 @@ height:60px;
 background:white;
 border-radius:50px;
 opacity:0.9;
+
 box-shadow:
 60px 10px white,
 120px 15px white,
@@ -208,6 +228,8 @@ animation:cloudFast 40s linear infinite;
 100%{left:120%}
 }
 
+/* BIRDS */
+
 .bird{
 position:absolute;
 font-size:32px;
@@ -225,7 +247,11 @@ animation:birdFly 55s linear infinite;
 }
 
 @keyframes birdFly{
+
 0%{transform:translateX(0);}
+
 50%{transform:translateX(80vw) translateY(-20px);}
+
 100%{transform:translateX(160vw);}
+
 }
